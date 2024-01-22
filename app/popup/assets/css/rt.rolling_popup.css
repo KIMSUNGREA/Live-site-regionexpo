@@ -1,0 +1,41 @@
+.rolling_popup_wrap {position:absolute;overflow:hidden;border:1px solid #222; background-color: #222; /* width: 500px;*/  top: 100px; left: 15%; z-index: 997;}
+.rolling_popup_wrap p{font-family:'HGGGothicssi','Malgun Gothic','Nanum Gothic';line-height:150%;font-size:11pt;}
+.closeWrap{height:16px; height:36px; padding:0 10px; color:#949393; background-color:#222; line-height:36px;}
+.rolling_popup_wrap .rolling_popup {cursor: pointer;}
+.rolling_popup_wrap p label{font-size:14px;}
+.rolling_popup_wrap input{margin:0 5px 0 0;float:none;}
+.rolling_popup_wrap .closeWrap a{float:right; color:#949393 !important;}
+.rolling_popup_wrap .closeWrap p {float: left;	cursor: pointer;padding: 7px 0;}
+.rolling_popup_wrap .closeWrap p span:nth-child(2) {display: none;}
+.rolling_popup_wrap .closeWrap p:hover span:nth-child(1) {display: none;}
+.rolling_popup_wrap .closeWrap p:hover span:nth-child(2) {display: inline;}
+.rolling_popup_wrap .btn_popclose img {transition:.25s;}
+.rolling_popup_wrap .btn_popclose:hover img {  -webkit-transform:rotate(180deg); transform:rotate(180deg); }
+.rolling_popup_wrap img {max-width:none;}
+
+.rolling_popup_nav  {text-align: center;}
+.rolling_popup_nav .rolling_nav  { }
+.rolling_popup_nav .rolling_nav a {display: block; background-color: #e7e6e6; color: #666; text-align: center; height: 40px; line-height: 40px; border-left: 1px solid #ccc; font-size: 15px; font-family:'HGGGothicssi'; font-weight: 400; transition:.25s;}
+.rolling_popup_nav .rolling_nav:first-child  a { border-left: none;}
+.rolling_popup_nav .rolling_nav a:hover,
+.rolling_popup_nav .rolling_nav.slick-current a {background-color: #4f75ff; color: #fff;}
+
+.rolling_popup_wrap .slick-prev,
+.rolling_popup_wrap .slick-next {width: 40px; height: 40px; border: 1px solid #fff; border-radius:50%;  background-repeat: no-repeat;	z-index: 1;}
+.rolling_popup_wrap .slick-prev {left: 15px; background-image: url('../img/popup_prev.png'); background-position: 45% 50%;}
+.rolling_popup_wrap .slick-next {right: 15px; background-image: url('../img/popup_next.png'); background-position: 55% 50%;}
+
+@media all and (max-width:1200px){ 
+	.rolling_popup_wrap {left: 100px !important; top: 150px !important;}
+}
+
+@media all and (max-width:680px){ 
+	.rolling_popup_wrap {left: 5% !important; text-align: center; min-width:300px;width: 90% !important;}
+	.rolling_popup_wrap img {height: auto !important; width: 100% !important; max-width: 100%; }
+	.rolling_popup_wrap p label {font-size: 12px;}
+	p.closeWrap {text-align: left; height: 30px; line-height: 28px;}
+	.rolling_popup_wrap .closeWrap a {font-size: 11px; line-height: 30px;}
+}
+@media all and (max-width:486px){
+	.rolling_popup_nav .rolling_nav a  {height: 35px; line-height: 35px; font-size: 12px;}
+}

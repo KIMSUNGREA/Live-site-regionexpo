@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+    <defs>
+        <clipPath id="g9o2ktju9a">
+            <path data-name="사각형 692" style="fill:none" d="M0 0h12v12H0z"/>
+        </clipPath>
+    </defs>
+    <g data-name="Ico/ScrollDown" transform="rotate(90 6 6)" style="clip-path:url(#g9o2ktju9a)">
+        <path data-name="패스 1386" d="M4.536 10.409a1.058 1.058 0 0 1-.748-1.807l2.6-2.6-2.6-2.6a1.06 1.06 0 0 1 1.5-1.5l3.351 3.351a1.058 1.058 0 0 1 0 1.5l-3.351 3.351a1.055 1.055 0 0 1-.748.31"/>
+    </g>
+</svg>

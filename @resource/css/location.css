@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+.sub .location-wrap{position: relative;width: 1182px;height: 794px;margin: 0 auto;background-color: #050b17;text-align: center;border-radius: 20px;}
+.sub .location-wrap .img-wrap{position: relative;margin: 0 auto;}
+.sub .location-wrap .img-wrap.img-pc{width: 600px;height: 794px;background: url('../images/common/bg_map.jpg') 0 0 no-repeat;}
+
+.sub .location-wrap .theme-list li{position: absolute;width: 334px;height: 149px;display: flex;justify-content: center;align-content: center;align-items: center;flex-direction: column;/*padding-top: 40px;*/text-align: center;background-repeat: no-repeat;background-position: 0 0;z-index: 10;}
+.sub .location-wrap .theme-list li:nth-child(1){left: 76px;top: 100px;background-image: url(../images/common/theme_1.png);}
+.sub .location-wrap .theme-list li:nth-child(2){left: 826px;top: 280px;background-image: url(../images/common/theme_2.png);}
+.sub .location-wrap .theme-list li:nth-child(3){left: 46px;bottom: 105px;background-image: url(../images/common/theme_3.png);}
+.sub .location-wrap .theme-list li span{display: block;font-size: 22px;color: #fff;line-height: 30px;}
+.sub .location-wrap .theme-list li strong{display: block;font-size: 30px;color: #fff;line-height: 40px; font-weight:600;}
+
+.sub .location-wrap .place-list li a{display: inline-block;position: absolute;width: 20px;height: 29px;font-size: 0;text-align: center;font-size: 0;color: #fff;}
+.sub .location-wrap .place-list li a::before{content: '';display: block;position: absolute;left: 0;top: 0;width: 20px;height: 29px;background: url('../images/common/ico_pin_active.png') 50% 0 no-repeat;background-size: cover;}
+
+
+@media all and (min-width: 961px) {
+	.sub .location-wrap .place-list li a{font-size: 0;transition: all 0.35s linear;}
+	.sub .location-wrap .place-list li a::before{transform: perspective(500px) scale(1) rotate(.001deg);transition: all 0.35s linear;}
+	.sub .location-wrap .place-list li a:hover::before{transform: perspective(500px) scale(2.4) rotate(.001deg);}	
+
+	.sub .location-wrap .place-list li a::after{display: none;}
+	.sub .location-wrap .place-list li a:hover::after{display: block;position: absolute;left:0;top: 20px;width: 100%;font-size: 12px;color: #fff;text-align: center;transition: all 0.5s ease-in;}
+	.sub .location-wrap .place-list li:nth-child(1) a:hover::after{content: '강원';}
+	.sub .location-wrap .place-list li:nth-child(2) a:hover::after{content: '인천';}
+	.sub .location-wrap .place-list li:nth-child(3) a:hover::after{content: '서울';}
+	.sub .location-wrap .place-list li:nth-child(4) a:hover::after{content: '경기';}
+	.sub .location-wrap .place-list li:nth-child(5) a:hover::after{content: '충북';}
+	.sub .location-wrap .place-list li:nth-child(6) a:hover::after{content: '충남';}
+	.sub .location-wrap .place-list li:nth-child(7) a:hover::after{content: '대전';}
+	.sub .location-wrap .place-list li:nth-child(8) a:hover::after{content: '세종';}
+	.sub .location-wrap .place-list li:nth-child(9) a:hover::after{content: '전북';}
+	.sub .location-wrap .place-list li:nth-child(10) a:hover::after{content: '광주';}
+	.sub .location-wrap .place-list li:nth-child(11) a:hover::after{content: '전남';}
+	.sub .location-wrap .place-list li:nth-child(12) a:hover::after{content: '경북';}
+	.sub .location-wrap .place-list li:nth-child(13) a:hover::after{content: '대구';}
+	.sub .location-wrap .place-list li:nth-child(14) a:hover::after{content: '울산';}
+	.sub .location-wrap .place-list li:nth-child(15) a:hover::after{content: '경남';}
+	.sub .location-wrap .place-list li:nth-child(16) a:hover::after{content: '부산';}
+	.sub .location-wrap .place-list li:nth-child(17) a:hover::after{content: '제주';}
+}
+
+
+/* 지도 < 지역 */
+
+
+@media all and (max-width: 1240px) {
+	.sub .location-wrap{width: 100%;}
+	.sub .location-wrap .theme-list li{width: 17.396vw;height: 7.760vw;background-size: cover;}
+	.sub .location-wrap .theme-list li span{font-size: 1.146vw;line-height: 1.563vw;}
+	.sub .location-wrap .theme-list li strong{font-size: 1.563vw;line-height: 2.083vw;}
+
+	.sub .location-wrap .theme-list li:nth-child(1){left: 6.129vw;top: 8.065vw;}
+	.sub .location-wrap .theme-list li:nth-child(2){left: 66.613vw;top: 22.581vw;}
+	.sub .location-wrap .theme-list li:nth-child(3){left: 3.71vw;bottom: 8.468vw;}
+}
+
+@media all and (min-width: 661px) {
+	.img-wrap.img-pc{display: block !important;}
+	.img-wrap.img-mo{display: none !important;}
+    .locationmenu-mo{display: none !important;}
+}
+
+@media all and (max-width: 660px) {
+	.sub .location-wrap{height: 345px;overflow: hidden;}
+	.img-wrap.img-pc{display: none !important;}
+	.img-wrap.img-mo{display: block !important;width: 300px;height: 345px;background-position: 50% 50%;background-repeat: no-repeat;}
+
+	.sub .location-wrap .theme-list{display: none;}
+}	
+
+
+.locationmenu-mo { margin-top: 20px; }
+.locationmenu-mo ul { display: flex; flex-wrap: wrap; gap: 4px; }
+.locationmenu-mo li { width: calc( 25% - 3px ); }
+.locationmenu-mo li a { display: flex; justify-content: center; align-items: center; width: 100%; height: 40px; background-color: #f5f5f5; border: 1px solid #eaeaea; border-radius: 4px; box-sizing: border-box; }
+.locationmenu-mo li.sel a { background-color: #1e8dc5; border: none; color: #fff; }
